@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Subcontinental Student Union</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Indian Subcontinental Student Union</h1>
+            <nav>
+                <a href="#about">About Us</a>
+                <a href="#leadership">Our Leadership</a>
+                <a href="#events">Events</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About the ISSU</h2>
+            <p>
+                The Indian Subcontinental Student Union (ISSU) is a student-led organization dedicated to celebrating
+                the culture and traditions of the Indian subcontinent. We host events like Diwali and Holi and create
+                merchandise to spread awareness. We meet during C1 in Eller 215.
+            </p>
+        </div>
+    </section>
+
+    <section id="leadership" class="section">
+        <div class="container">
+            <h2>Our Leadership Team</h2>
+            <div class="leader-row">
+                <div class="leader">
+                    <img src="images/arin.jpg" alt="Arin Gopakumar">
+                    <p><strong>Arin Gopakumar</strong><br><span>Co-President</span></p>
+                </div>
+                <div class="leader">
+                    <img src="images/syan.jpg" alt="Syan Jain">
+                    <p><strong>Syan Jain</strong><br><span>Co-President</span></p>
+                </div>
+                <div class="leader">
+                    <img src="images/naren.jpg" alt="Naren Gudavalli">
+                    <p><strong>Naren Gudavalli</strong><br><span>Co-President</span></p>
+                </div>
+            </div>
+            <div class="leader-row">
+                <div class="leader">
+                    <img src="images/tejas.jpg" alt="Tejas Khurana">
+                    <p><strong>Tejas Khuranna</strong><br><span>Co-Vice President</span></p>
+                </div>
+                <div class="leader">
+                    <img src="images/aaksash.jpg" alt="Aakash Ram">
+                    <p><strong>Aaksash Ram</strong><br><span>Co-Vice President</span></p>
+                </div>
+            </div>
+            <div class="leader-row">
+                <div class="leader">
+                    <img src="images/umeed.jpg" alt="Umeed Singh">
+                    <p><strong>Umeed Singh</strong><br><span>Secretary</span></p>
+                </div>
+                <div class="leader">
+                    <img src="images/devan.jpg" alt="Deven Ghoda">
+                    <p><strong>Devan Ghoda</strong><br><span>Events Coordinator</span></p>
+                </div>
+                <div class="leader">
+                    <img src="images/shaan.jpg" alt="Shaan Patel">
+                    <p><strong>Shaan Patel</strong><br><span>Social Media Manager</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <div class="container">
+            <h2>Diwali: Festival of Lights</h2>
+            <p>
+                Diwali, also known as Deepavali, celebrates the triumph of light over darkness and good over evil.
+                Join us for food, music, and festivities!
+            </p>
+
+            <h3>Event Details:</h3>
+            <p>📅 <strong>Date:</strong> October 28, 2024 <br> 📍 <strong>Location:</strong> Community Period and Lunch in the Black Box</p>
+
+            <div class="flyer-container">
+                <img src="images/diwali-event-details.jpg" alt="Diwali Event Flyer">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Indian Subcontinental Student Union</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
