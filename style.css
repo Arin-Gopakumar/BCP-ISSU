@@ -11,7 +11,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 10px 0; /* Reduced padding */
+    padding: 10px 0;
 }
 
 header {
@@ -34,7 +34,7 @@ nav a:hover {
 
 /* Section Styles */
 .section {
-    padding: 20px 0; /* Reduced padding for tighter layout */
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -53,18 +53,19 @@ nav a:hover {
 .leader-row {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 10px; /* Tighter margin between rows */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 15px; /* Adjust gap between items */
+    margin-bottom: 10px;
 }
 
 .leader {
     text-align: center;
-    width: 150px;
+    width: 120px; /* Adjust width for better fit */
 }
 
 .leader img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -103,4 +104,24 @@ footer {
     color: white;
     text-align: center;
     padding: 8px 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .leader {
+        width: 100px; /* Adjust leader size for mobile */
+    }
+
+    .leader img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section h2 {
+        font-size: 24px; /* Reduce heading size for mobile */
+    }
+
+    .section p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
 }
